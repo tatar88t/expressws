@@ -1,0 +1,10 @@
+node_modules
+.idea/
+.vscode/
+/nbproject/
+/v8-compile-cache-0/
+/.git/
+yarn-error.log
+/.gitlab-ci.yml
+dist/
+.vscode/
