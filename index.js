@@ -3,6 +3,7 @@ import mongoose from 'mongoose';
 import bodyParser from 'body-parser';
 
 import postRoutes from './routes/postRoutes.js';
+import chuckRoutes from './routes/chuck.js'
 
 const app = express();
 const PORT = '8000';
@@ -16,7 +17,7 @@ app.use(express.json());
 app.use(express.urlencoded({extended: true}));
 
 app.use('/posts', postRoutes);
-
+app.use('/chuck', chuckRoutes);
 app.use((req, res, next) => {
     console.log(`request recieved from at ${Date.now()}`)
     next();
